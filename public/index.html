@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basundhara Village Phase - I & II | Premium Plots in Janla, Bhubaneswar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#064e3b', // Deep Forest Green
+                        secondary: '#d97706', // Warm Gold / Amber
+                        dark: '#022c22',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased scroll-smooth">
+
+    <!-- Top Bar / Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-primary text-white p-2.5 rounded-xl font-bold text-xl tracking-wider shadow-md">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div>
+                    <span class="block font-bold text-slate-900 text-lg leading-tight">Basundhara Village</span>
+                    <span class="text-xs text-secondary font-bold uppercase tracking-wider">Phase - I & II • Janla, Bhubaneswar</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#overview" class="hover:text-primary transition">Overview</a>
+                <a href="#highlights" class="hover:text-primary transition">Ground Reality</a>
+                <a href="#maps" class="hover:text-primary transition">Master & Location Maps</a>
+                <a href="#location" class="hover:text-primary transition">Highlights</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="tel:+918249837005" class="bg-primary hover:bg-emerald-900 text-white px-4 py-2.5 rounded-xl font-medium text-sm shadow-md transition flex items-center space-x-2">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>8249837005</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('images/elevation-hero.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-emerald-950/80 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-secondary/20 border border-secondary/40 px-3.5 py-1.5 rounded-full text-amber-400 text-xs font-semibold tracking-wide uppercase shadow-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Dussehra Special Offer • Invest in Your Future</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Basundhara Village <span class="block text-secondary mt-1">Phase - I & II at Janla</span>
+                </h1>
+                <p class="text-lg text-slate-300 max-w-xl">
+                    Exclusive gated plotted development located near C.V. Raman College, Bhubaneswar. Prime location with great connectivity, ideal for high growth and investment.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="bg-secondary hover:bg-amber-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition flex items-center space-x-2 text-base">
+                        <span>Book Your Plot Today</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:+918249837005" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl transition flex items-center space-x-2 text-base backdrop-blur-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>Call: 8249837005</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Inquiry Card -->
+            <div class="lg:col-span-5 bg-white text-slate-900 p-8 rounded-3xl shadow-2xl border border-slate-100">
+                <h3 class="text-2xl font-bold text-slate-900 mb-2">Secure Your Plot</h3>
+                <p class="text-slate-500 text-sm mb-6">Fill details for instant WhatsApp connect & site visit booking.</p>
+                
+                <form id="leadForm" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Full Name *</label>
+                        <input type="text" id="name" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone Number *</label>
+                        <input type="tel" id="phone" required placeholder="10-digit mobile number" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address</label>
+                        <input type="email" id="email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Preferred Time for Site Visit</label>
+                        <select id="preferredTime" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="Morning (10 AM - 1 PM)">Morning (10 AM - 1 PM)</option>
+                            <option value="Afternoon (1 PM - 4 PM)">Afternoon (1 PM - 4 PM)</option>
+                            <option value="Evening (4 PM - 7 PM)">Evening (4 PM - 7 PM)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg text-base flex items-center justify-center space-x-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Get Instant Callback via WhatsApp</span>
+                    </button>
+                </form>
+                <div id="formMessage" class="hidden mt-4 p-3 rounded-xl text-sm text-center font-medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Highlights / Stats Bar -->
+    <section class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="border-r border-emerald-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">₹1,850</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Per Sq. Ft.</span>
+            </div>
+            <div class="border-r border-emerald-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">30 FT</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Wide Internal Roads</span>
+            </div>
+            <div class="border-r border-emerald-800/60 last:border-none">
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">Gharabari</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Yellow Zone Plots</span>
+            </div>
+            <div>
+                <span class="block text-3xl lg:text-4xl font-extrabold text-secondary">Included</span>
+                <span class="text-xs lg:text-sm text-slate-200 uppercase tracking-wider font-medium">Boundary Wall</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Project Overview</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Your Investment Lead to a Brighter Tomorrow</h3>
+            <p class="text-slate-600 mt-4">Strategically located at Janla, Bhubaneswar, Basundhara Village Phase I & II offers clear-title plotted land with immediate development readiness.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div onclick="openModal('amenitiesModal')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition cursor-pointer group">
+                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-primary group-hover:text-white transition">
+                    <i class="fa-solid fa-road"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                    <span>30 FT Wide Roads</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-secondary"></i>
+                </h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Spacious approach and internal red-soil roads ensuring effortless vehicular movement across the layout.</p>
+            </div>
+
+            <div onclick="openModal('amenitiesModal')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition cursor-pointer group">
+                <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-xl flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-secondary group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3 flex items-center justify-between">
+                    <span>Boundary Wall Included</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-secondary"></i>
+                </h4>
+                <p class="text-slate-600 text-sm leading-relaxed">Secured gated community layout complete with robust perimeter boundary construction.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
+                <div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-xl font-bold mb-6">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+                <h4 class="text-xl font-bold text-slate-900 mb-3">Gharabari - Yellow Zone</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">100% legal residential yellow zone land ready for immediate registration and hassle-free bank loan approvals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ground Reality & Site Gallery Section -->
+    <section id="highlights" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Ground Reality</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Explore Basundhara Village Site Photos</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div onclick="openImageViewer('Main Site Entrance & Roads', 'Demarcated plot roads and boundary development at Janla site.', 'images/plot-reality-1.jpeg')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('images/plot-reality-1.jpeg');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Main Site Entrance & Roads</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Demarcated plot roads and boundary development.</p>
+                    </div>
+                </div>
+
+                <div onclick="openImageViewer('Wide Layout View', 'Spacious green land parcel with clear demarcations and future growth potential.', 'images/plot-reality-2.jpeg')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('images/plot-reality-2.jpeg');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Wide Layout View</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Spacious land parcel with clear demarcations.</p>
+                    </div>
+                </div>
+
+                <div onclick="openImageViewer('Phase I & II Boundaries', 'Well-laid out plots in a peaceful residential environment.', 'images/plot-reality-3.jpeg')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('images/plot-reality-3.jpeg');"></div>
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
+                            <span>Phase I & II Boundaries</span>
+                            <i class="fa-solid fa-expand text-xs text-secondary"></i>
+                        </h4>
+                        <p class="text-sm text-slate-500 mt-1">Well-laid plots in a peaceful green environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Plan & Location Maps Section -->
+    <section id="maps" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Official Documentation</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Master Plan & Detailed Location Map</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div onclick="openImageViewer('Master Land Use Plan', 'Comprehensive development plan and layout maps for Janla area.', 'images/master-plan.jpeg')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center cursor-pointer hover:shadow-xl transition group">
+                <div class="h-72 bg-cover bg-center rounded-xl mb-6 group-hover:scale-105 transition duration-300 flex items-end justify-center p-4 text-white font-bold bg-slate-900/40" style="background-image: url('images/master-plan.jpeg');">
+                    <span class="bg-slate-900/80 px-4 py-2 rounded-lg text-sm"><i class="fa-solid fa-magnifying-glass-plus mr-2">Click to Enlarge Master Plan</i></span>
+                </div>
+                <h4 class="text-2xl font-bold text-slate-900">Master Land Use Plan</h4>
+                <p class="text-slate-600 text-sm mt-2">Detailed layout and zoning document for Phase I & II.</p>
+            </div>
+
+            <div onclick="openImageViewer('Location Map', 'Strategic positioning near Janla Medical Chhak, CV Raman College, and NH.', 'images/location-map.jpeg')" class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 text-center cursor-pointer hover:shadow-xl transition group">
+                <div class="h-72 bg-cover bg-center rounded-xl mb-6 group-hover:scale-105 transition duration-300 flex items-end justify-center p-4 text-white font-bold bg-slate-900/40" style="background-image: url('images/location-map.jpeg');">
+                    <span class="bg-slate-900/80 px-4 py-2 rounded-lg text-sm"><i class="fa-solid fa-magnifying-glass-plus mr-2">Click to Enlarge Location Map</i></span>
+                </div>
+                <h4 class="text-2xl font-bold text-slate-900">Detailed Location Map</h4>
+                <p class="text-slate-600 text-sm mt-2">Showing proximity to NH, AIIMS, Info City-II, and educational hubs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Highlights Grid -->
+    <section id="location" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-secondary uppercase tracking-widest mb-3">Connectivity</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">Location Highlights</h3>
+                <p class="text-slate-300">Positioned in a high-growth corridor surrounded by major institutions and upcoming infrastructure.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-road text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">1.5 KM from NH</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-cart-shopping text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">2 KM from ONE WORLD by METRO</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-building text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Near Info Valley</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-graduation-cap text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Near C.V. Raman Global University</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-map text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Town Planning Project 4 KM</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-landmark text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Near Reserve Bank</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-hospital text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Near Bagchi Cancer Hospital</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <i class="fa-solid fa-route text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Good connectivity to 100 FT Road</h4>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 col-span-2">
+                    <i class="fa-solid fa-city text-3xl text-secondary mb-3"></i>
+                    <h4 class="font-bold text-sm">Proposed IT hubs within 5 KM</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="bg-primary text-white p-2.5 rounded-xl font-bold text-xl">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-white text-lg leading-tight">Basundhara Village</span>
+                        <span class="text-xs text-secondary font-bold uppercase tracking-wider">Phase - I & II</span>
+                    </div>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Prime residential plotted development at Janla, Bhubaneswar. Gharabari yellow zone plots with 30 ft wide roads.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Contact Information</h4>
+                <p class="text-sm mb-2"><strong class="text-white">Project Location:</strong> Janla, Near CV Raman College, Bhubaneswar</p>
+                <p class="text-sm mb-2"><strong class="text-white">Contact Numbers:</strong> 8249837005, 7978146277</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#overview" class="hover:text-white transition">Project Overview</a></li>
+                    <li><a href="#highlights" class="hover:text-white transition">Ground Reality Photos</a></li>
+                    <li><a href="#maps" class="hover:text-white transition">Master & Location Maps</a></li>
+                    <li><a href="#location" class="hover:text-white transition">Location Highlights</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+            &copy; 2026 Basundhara Village Phase - I & II. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- POPUP MODALS -->
+    <div id="amenitiesModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-xl w-full p-8 relative shadow-2xl">
+            <button onclick="closeModal('amenitiesModal')" class="absolute top-6 right-6 w-10 h-10 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center text-slate-700 font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <h3 class="text-2xl font-extrabold text-slate-900 mb-4">Plot Specifications</h3>
+            <ul class="space-y-3 text-sm text-slate-600 mb-6">
+                <li><i class="fa-solid fa-check text-primary mr-2"></i><strong>Price:</strong> ₹1,850 / Sq. Ft.</li>
+                <li><i class="fa-solid fa-check text-primary mr-2"></i><strong>Roads:</strong> 30 FT Wide internal roads</li>
+                <li><i class="fa-solid fa-check text-primary mr-2"></i><strong>Land Type:</strong> Gharabari - Yellow Zone</li>
+                <li><i class="fa-solid fa-check text-primary mr-2"></i><strong>Security:</strong> Boundary Wall Included</li>
+            </ul>
+            <a href="#contact" onclick="closeModal('amenitiesModal')" class="block w-full bg-primary text-white text-center font-bold py-3.5 rounded-xl transition">
+                Enquire Now
+            </a>
+        </div>
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full text-center">
+            <button onclick="closeModal('imageModal')" class="absolute -top-12 right-0 w-10 h-10 bg-white/20 hover:bg-white/40 text-white rounded-full flex items-center justify-center font-bold transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <img id="modalImg" src="" alt="Enlarged View" class="max-h-[75vh] mx-auto rounded-2xl shadow-2xl object-contain mb-4">
+            <h3 id="modalTitle" class="text-2xl font-bold text-white mb-2"></h3>
+            <p id="modalDesc" class="text-slate-300 text-sm max-w-xl mx-auto"></p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        window.openModal = function(modalId) {
+            document.getElementById(modalId)?.classList.remove('hidden');
+        };
+        window.closeModal = function(modalId) {
+            document.getElementById(modalId)?.classList.add('hidden');
+        };
+        window.openImageViewer = function(title, desc, imgSrc) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            document.getElementById('modalImg').src = imgSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
+        };
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-slate-950')) {
+                event.target.classList.add('hidden');
+            }
+        };
+
+        // WhatsApp Instant Callback & Backend Sync
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim() || 'Not provided';
+            const preferredTime = document.getElementById('preferredTime').value;
+
+            const msgDiv = document.getElementById('formMessage');
+            if(msgDiv) {
+                msgDiv.className = 'mt-4 p-3 rounded-xl text-sm text-center font-medium bg-emerald-100 text-emerald-700';
+                msgDiv.textContent = 'Redirecting to WhatsApp...';
+            }
+
+            try {
+                await fetch('http://localhost:5000/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, phone, email, preferredTime, projectName: 'Basundhara Village Phase - I & II' })
+                });
+            } catch (err) {
+                console.log('Backend sync offline:', err);
+            }
+
+            const whatsappNumber = '918249837005';
+            const message = `Hello, I am interested in Basundhara Village Phase - I & II!%0A` +
+                            `*Name:* ${encodeURIComponent(name)}%0A` +
+                            `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                            `*Email:* ${encodeURIComponent(email)}%0A` +
+                            `*Preferred Time:* ${encodeURIComponent(preferredTime)}`;
+
+            setTimeout(() => {
+                window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+                document.getElementById('leadForm').reset();
+            }, 600);
+        });
+    </script>
+</body>
+</html>
