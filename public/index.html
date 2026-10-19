@@ -209,8 +209,8 @@
                     </div>
                 </div>
 
-                <div onclick="openImageViewer('Phase I & II Boundaries', 'Well-laid out plots in a peaceful residential environment.', 'images/plot-reality-1.jpeg')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
-                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('images/plot-reality-1.jpeg');"></div>
+                <div onclick="openImageViewer('Phase I & II Boundaries', 'Well-laid out plots in a peaceful residential environment.', 'images/plot-reality-3.jpeg')" class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 cursor-pointer hover:shadow-xl transition group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-105 transition duration-300" style="background-image: url('images/plot-reality-3.jpeg');"></div>
                     <div class="p-6">
                         <h4 class="font-bold text-lg text-slate-900 flex items-center justify-between">
                             <span>Phase I & II Boundaries</span>
@@ -419,6 +419,15 @@
             setTimeout(() => {
                 window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
                 document.getElementById('leadForm').reset();
+                
+                // Clear the redirect message after opening WhatsApp
+                if(msgDiv) {
+                    msgDiv.textContent = 'Thank you! Redirected successfully.';
+                    setTimeout(() => {
+                        msgDiv.classList.add('hidden');
+                        msgDiv.textContent = '';
+                    }, 3000);
+                }
             }, 600);
         });
     </script>
